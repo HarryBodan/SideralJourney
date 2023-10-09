@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/earth"
+        tools:context=".EarthFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".EarthFragment">
+
+            <!-- Cuadro semitransparente con bordes redondos y centrado horizontalmente -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="370dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center_horizontal"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#80000000"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+                <!-- Contenido dentro del CardView -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <!-- Contenido en la izquierda -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="EARTH"
+                            android:fontFamily="@font/ethnocentric"
+                            android:textSize="30sp"
+                            android:textColor="@android:color/white"/>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
+
+                        <!-- Título -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Maximum temperature"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"/>
+
+                        <!-- Descripción -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="50º C"
+                            android:textSize="14sp"
+                            android:textColor="@android:color/white"/>
+
+                        <!-- Espacio adicional -->
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Minimum temperature"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"/>
+
+                        <!-- Descripción -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="-90º C"
+                            android:textSize="14sp"
+                            android:textColor="@android:color/white"/>
+
+                        <!-- Espacio adicional -->
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Location"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"/>
+
+                        <!-- Descripción -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="The Milky Way"
+                            android:textSize="14sp"
+                            android:textColor="@android:color/white"/>
+
+
+
+                    </LinearLayout>
+
+                    <!-- Imagen en la derecha -->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/planetearth"
+                    android:scaleType="centerCrop"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About Us"
+                android:fontFamily="@font/ethnocentric"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#80000000"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="370dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="350dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/nemesis"
+                        android:layout_gravity="center_horizontal"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nemesis Crew"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Our project primarily focuses on scientific outreach. Eclipses are captivating phenomena that present unique opportunities to educate individuals about astronomy and science at large. Observatories and scientists frequently harness eclipses as catalysts for scientific outreach and public education initiatives. They serve as a means of forging a profound connection with the cosmos, a connection that has been historically employed to record and measure time. Eclipses, in their various forms, offer valuable conduits for scientific inquiry. Solar eclipses, in particular, provide astronomers with an exceptional window of opportunity to scrutinize the solar atmosphere—an endeavor that would typically be impeded by the Sun's intense luminosity. Moreover, eclipses have played a pivotal role in corroborating and substantiating pivotal scientific theories, such as Einstein's Theory of Relativity.y"
+                        android:textSize="14sp"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#80000000"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="I invite you to travel to the future through the time machine called vision, which works with the powerful engine of imagination, the twinkling energy of ideas and the brilliant flame of curiosity."
+                        android:fontFamily="@font/ethnocentric"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </FrameLayout>
+</ScrollView>

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/other"
+        tools:context=".SunFragment"
+        android:paddingBottom="120dp">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".SunFragment">
+
+            <!-- Cuadro semitransparente con bordes redondos y centrado horizontalmente -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="370dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center_horizontal"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#80000000"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+                <!-- Contenido dentro del CardView -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <!-- Contenido en la izquierda -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="SUN"
+                            android:fontFamily="@font/ethnocentric"
+                            android:textSize="30sp"
+                            android:textColor="@android:color/white"/>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
+
+                        <!-- Título -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Maximum temperature"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"/>
+
+                        <!-- Descripción -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="45°"
+                            android:textSize="14sp"
+                            android:textColor="@android:color/white"/>
+
+                        <!-- Espacio adicional -->
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Minimum temperature"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"/>
+
+                        <!-- Descripción -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="4°"
+                            android:textSize="14sp"
+                            android:textColor="@android:color/white"/>
+
+                        <!-- Espacio adicional -->
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Location"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"/>
+
+                        <!-- Descripción -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="The Milky Way"
+                            android:textSize="14sp"
+                            android:textColor="@android:color/white"/>
+
+
+
+                    </LinearLayout>
+
+                    <!-- Imagen en la derecha -->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/thesun"
+                        android:scaleType="centerCrop"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Types of solar eclipses"
+                android:fontFamily="@font/ethnocentric"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#80000000"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="370dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/one"
+                    android:layout_gravity="center_horizontal"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Solar Eclipse"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="When the Moon completely covers the Sun, casting a shadow on Earth and causing a temporary darkness in the daytime."
+                    android:textSize="14sp"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#80000000"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="370dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="350dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/two"
+                        android:layout_gravity="center_horizontal"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Partial Solar Eclipse"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="When the Moon partially covers the Sun, creating a partial shadow on Earth and only blocking part of the Sun's light."
+                        android:textSize="14sp"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#80000000"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="370dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="350dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/three"
+                        android:layout_gravity="center_horizontal"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Anular Solar Eclipse"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Features the Moon covering the central part of the Sun, leaving a ring-like appearance, or an 'annulus', around the Sun's outer edge visible."
+                        android:textSize="14sp"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#80000000"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="370dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="350dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/four"
+                        android:layout_gravity="center_horizontal"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hybrid Solar Eclipse"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A rare eclipse that exhibits characteristics of both total and annular eclipses as it traverses Earth's surface."
+                        android:textSize="14sp"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    </FrameLayout>
+</ScrollView>

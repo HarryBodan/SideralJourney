@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logosiderealjourney"
+            android:layout_above="@id/login_layout_linear"/>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:padding="24dp"
+            android:background="@drawable/rounded_background"
+            android:id="@+id/login_layout_linear">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WELCOME"
+                android:fontFamily="@font/ethnocentric"
+                android:textSize="30sp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"/>
+
+            <!-- Campo de entrada para el nombre de usuario -->
+            <EditText
+                android:id="@+id/editTextUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:hint="Username"
+                android:textColorHint="#A6A6A6"
+                android:textColor="@color/black"
+                android:inputType="text" />
+
+            <!-- Campo de entrada para la contraseña -->
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="Password"
+                android:textColorHint="#A6A6A6"
+                android:textColor="@color/black"
+                android:inputType="textPassword" />
+
+
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_layout_linear"
+        android:layout_marginTop="24dp"
+        android:text="Login" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/buttonLogin"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="78dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/nasa"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/nemesis"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
